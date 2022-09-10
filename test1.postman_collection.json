@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "3b3fa1ff-a50c-44bb-9caa-4745200c1d56",
+		"name": "test1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22877373"
+	},
+	"item": [
+		{
+			"name": "https://api.binstd.com/shouji/query?appkey=b820b28675c9e59a&shouji=13456755448",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body({\"status\":0,\"msg\":\"ok\",\"result\":{\"shouji\":\"13456755448\",\"province\":\"浙江\",\"city\":\"杭州\",\"company\":\"中国移动\",\"cardtype\":null,\"areacode\":\"0571\"}});\r",
+							"});\r",
+							"// pm.test(\"Your test name\", function () {\r",
+							"//     var jsonData = pm.response.json();\r",
+							"//     pm.expect(jsonData.result).to.eql({\"shouji\":\"13456755448\",\"province\":\"浙江\",\"city\":\"杭州\",\"company\":\"中国移动\",\"cardtype\":null,\"areacode\":\"0571\"});\r",
+							"// });\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.binstd.com/shouji/query?appkey=b820b28675c9e59a&shouji=13456755448",
+					"protocol": "https",
+					"host": [
+						"api",
+						"binstd",
+						"com"
+					],
+					"path": [
+						"shouji",
+						"query"
+					],
+					"query": [
+						{
+							"key": "appkey",
+							"value": "b820b28675c9e59a"
+						},
+						{
+							"key": "shouji",
+							"value": "13456755448"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.binstd.com/shouji/query?appkey=b820b28675c9e59a&shouji=13456755448 Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body({\"status\":0,\"msg\":\"ok\",\"result\":{\"shouji\":\"13456755448\",\"province\":\"浙江\",\"city\":\"杭州\",\"company\":\"中国移动\",\"cardtype\":null,\"areacode\":\"0571\"}});\r",
+							"});\r",
+							"// pm.test(\"Your test name\", function () {\r",
+							"//     var jsonData = pm.response.json();\r",
+							"//     pm.expect(jsonData.result).to.eql({\"shouji\":\"13456755448\",\"province\":\"浙江\",\"city\":\"杭州\",\"company\":\"中国移动\",\"cardtype\":null,\"areacode\":\"0571\"});\r",
+							"// });\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.binstd.com/shouji/query?appkey=b820b28675c9e59a&shouji=13456755448",
+					"protocol": "https",
+					"host": [
+						"api",
+						"binstd",
+						"com"
+					],
+					"path": [
+						"shouji",
+						"query"
+					],
+					"query": [
+						{
+							"key": "appkey",
+							"value": "b820b28675c9e59a"
+						},
+						{
+							"key": "shouji",
+							"value": "13456755448"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
